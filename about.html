@@ -1,0 +1,607 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Me | Cedemarl Abelarde</title>
+    <meta name="description" content="Learn about Cedemarl Abelarde's personal background, academic journey in Information Technology, skills matrix, career goals, and interests." />
+    <meta property="og:title" content="About Me | Cedemarl Abelarde" />
+    <meta property="og:description" content="Learn about Cedemarl Abelarde's personal background, academic journey in Information Technology, skills matrix, career goals, and interests." />
+    <meta property="og:type" content="website" />
+
+    <!-- Google Fonts: Poppins & Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+    <!-- Bootstrap 5 CSS via CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    
+    <!-- Bootstrap Icons via CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Top Navigation Bar -->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-custom sticky-top" aria-label="Main Navigation">
+        <div class="container">
+          <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+            <div class="navbar-brand-badge">CA</div>
+            <div>
+              <div class="brand-text-name">Cedemarl Abelarde</div>
+              <div class="brand-text-sub">Student Portfolio</div>
+            </div>
+          </a>
+
+          <!-- Mobile Toggle Button -->
+          <button class="navbar-toggler border-0 shadow-none p-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-list fs-2 text-primary"></i>
+          </button>
+
+          <!-- Navigation Links -->
+          <div class="collapse navbar-collapse" id="navbarContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+              <li class="nav-item">
+                <a class="nav-link nav-link-custom" href="index.html">
+                  <i class="bi bi-house-door me-1"></i> Home
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-link-custom active" aria-current="page" href="about.html">
+                  <i class="bi bi-person me-1"></i> About Me
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-link-custom" href="projects.html">
+                  <i class="bi bi-kanban me-1"></i> Projects
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-link-custom" href="tour.html">
+                  <i class="bi bi-compass me-1"></i> Academic Tours
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-link-custom" href="contact.html">
+                  <i class="bi bi-envelope me-1"></i> Contact
+                </a>
+              </li>
+              <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+                <button type="button" class="btn btn-outline-navy btn-sm d-flex align-items-center gap-2" data-bs-toggle="modal" data-bs-target="#resumeModal">
+                  <i class="bi bi-file-earmark-person"></i>
+                  <span>Resume</span>
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Page Header Banner -->
+      <section class="py-5 bg-white border-bottom">
+        <div class="container py-2">
+          <div class="row align-items-center">
+            <div class="col-lg-8">
+              <span class="badge-soft mb-2">
+                <i class="bi bi-person-badge"></i> Personal Profile & Journey
+              </span>
+              <h1 class="display-5 fw-bold mb-2">About Me</h1>
+              <p class="lead text-secondary mb-0">
+                A look into my academic journey, passion for technology, technical skills matrix, and career ambitions.
+              </p>
+            </div>
+            <div class="col-lg-4 text-lg-end mt-3 mt-lg-0">
+              <a href="contact.html" class="btn btn-primary-navy">
+                <i class="bi bi-envelope me-2"></i> Let's Connect
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Personal Background & Photo Section -->
+      <section class="py-5">
+        <div class="container py-3">
+          <div class="row g-5 align-items-center">
+            <!-- Left Profile Image Card -->
+            <div class="col-lg-5">
+              <div class="card-custom p-4 text-center bg-white">
+                <div class="hero-avatar-wrapper mb-3">
+                  <div class="hero-avatar-frame mx-auto" style="width: 240px; height: 240px;">
+                    <svg class="hero-avatar-img" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Cedemarl Abelarde Profile Portrait">
+                      <rect width="400" height="400" fill="#f8fafc" />
+                      <circle cx="200" cy="200" r="180" fill="#e0f2fe" opacity="0.6" />
+                      <path d="M70 380C70 310 120 265 200 265C280 265 330 310 330 380" fill="#0f2b48" />
+                      <path d="M165 265L200 320L235 265L215 265L200 295L185 265H165Z" fill="#ffffff" />
+                      <path d="M195 285L205 285L210 375L200 395L190 375L195 285Z" fill="#2563eb" />
+                      <path d="M175 220H225V270H175V220Z" fill="#fbcfe8" />
+                      <ellipse cx="200" cy="180" rx="65" ry="78" fill="#fed7aa" />
+                      <circle cx="180" cy="175" r="5" fill="#1e293b" />
+                      <circle cx="220" cy="175" r="5" fill="#1e293b" />
+                      <path d="M185 210C190 220 210 220 215 210" stroke="#0f172a" stroke-width="3" stroke-linecap="round" fill="none" />
+                      <rect x="165" y="165" width="30" height="20" rx="4" stroke="#0f2b48" stroke-width="3" fill="rgba(255,255,255,0.2)" />
+                      <rect x="205" y="165" width="30" height="20" rx="4" stroke="#0f2b48" stroke-width="3" fill="rgba(255,255,255,0.2)" />
+                      <line x1="195" y1="175" x2="205" y2="175" stroke="#0f2b48" stroke-width="3" />
+                      <path d="M135 170C135 110 170 100 200 100C230 100 265 110 265 170C265 130 240 120 200 120C160 120 135 130 135 170Z" fill="#0f172a" />
+                    </svg>
+                  </div>
+                </div>
+
+                <h4 class="fw-bold mb-1">Cedemarl Abelarde</h4>
+                <p class="text-muted small mb-3">Undergraduate IT Major • Full-Stack Enthusiast</p>
+
+                <div class="d-flex justify-content-center gap-2 mb-3">
+                  <span class="badge-tag"><i class="bi bi-geo-alt me-1"></i>Philippines</span>
+                  <span class="badge-tag"><i class="bi bi-mortarboard me-1"></i>Senior 4th Year</span>
+                </div>
+
+                <div class="border-top pt-3 text-start small text-secondary">
+                  <div class="d-flex justify-content-between py-1">
+                    <span class="text-muted">Degree:</span>
+                    <span class="fw-semibold text-dark">BS Information Tech</span>
+                  </div>
+                  <div class="d-flex justify-content-between py-1">
+                    <span class="text-muted">Status:</span>
+                    <span class="badge bg-success-subtle text-success fw-bold">Internship Ready</span>
+                  </div>
+                  <div class="d-flex justify-content-between py-1">
+                    <span class="text-muted">Language:</span>
+                    <span class="fw-semibold text-dark">English, Filipino</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Biography Text -->
+            <div class="col-lg-7">
+              <div class="section-pretitle">Personal Background</div>
+              <h2 class="fw-bold mb-3">Driven by curiosity and a commitment to engineering excellence.</h2>
+              
+              <p class="text-secondary mb-3">
+                My journey into technology began with a fascination for how simple lines of code could be transformed into interactive, empowering tools for people. As an undergraduate student pursuing a Bachelor of Science in Information Technology, I have dedicated myself to mastering both the theoretical foundations and the practical craftsmanship of software development.
+              </p>
+              
+              <p class="text-secondary mb-4">
+                Throughout my academic years, I have actively led collaborative programming projects, represented my department in hackathons and tech symposiums, and continually broadened my skill set beyond the classroom curriculum. I believe that good software is not just functional—it must be accessible, intuitive, and built with maintainability in mind.
+              </p>
+
+              <!-- Career Goals & Vision -->
+              <div class="p-4 rounded-3 bg-white border border-light-subtle shadow-sm mb-4">
+                <h5 class="fw-bold text-dark mb-2 d-flex align-items-center gap-2">
+                  <i class="bi bi-compass text-primary"></i> Career Goals & Vision
+                </h5>
+                <p class="small text-secondary mb-2">
+                  <strong>Short-Term Goal:</strong> Secure an internship or junior developer role where I can immerse myself in a professional Agile team, contribute to production codebases, and learn industry-standard workflows.
+                </p>
+                <p class="small text-secondary mb-0">
+                  <strong>Long-Term Vision:</strong> Grow into a versatile Full-Stack Engineer and System Architect capable of mentoring junior developers and driving scalable, socially impactful digital solutions.
+                </p>
+              </div>
+
+              <!-- Quick action -->
+              <div class="d-flex gap-3">
+                <a href="projects.html" class="btn btn-outline-navy btn-sm">
+                  <i class="bi bi-laptop me-1"></i> Explore My Works
+                </a>
+                <a href="tour.html" class="btn btn-outline-navy btn-sm">
+                  <i class="bi bi-award me-1"></i> Academic Tours
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Educational Journey Section -->
+      <section class="py-5 bg-white border-top border-bottom" aria-label="Educational Journey">
+        <div class="container py-3">
+          <div class="section-title-wrap text-center">
+            <div class="section-pretitle">Academic Background</div>
+            <h2 class="section-title">Educational Journey</h2>
+            <p class="section-subtitle mx-auto">
+              A solid foundation built on rigorous coursework, continuous learning, and departmental leadership.
+            </p>
+          </div>
+
+          <div class="row g-4 justify-content-center">
+            <!-- Higher Education Card -->
+            <div class="col-lg-6">
+              <div class="card-custom h-100 p-4 border-primary-subtle">
+                <div class="d-flex justify-content-between align-items-start mb-3">
+                  <div>
+                    <span class="badge-soft mb-2">Higher Education • Undergraduate</span>
+                    <h4 class="fw-bold text-dark mb-1">Bachelor of Science in Information Technology</h4>
+                    <div class="text-primary fw-semibold small">College of Computer Studies & Systems</div>
+                  </div>
+                  <span class="badge-tag">2021 – Present</span>
+                </div>
+                
+                <p class="text-secondary small mb-3">
+                  Focused on software engineering principles, web and mobile technologies, relational database design, and systems analysis. Consistent candidate for Dean's Honors List.
+                </p>
+
+                <h6 class="fw-bold small text-dark mb-2">Key Coursework Completed:</h6>
+                <div class="d-flex flex-wrap gap-1 mb-3">
+                  <span class="badge-tag">Data Structures & Algorithms</span>
+                  <span class="badge-tag">Web Systems & Technologies</span>
+                  <span class="badge-tag">Database Management Systems</span>
+                  <span class="badge-tag">Object-Oriented Programming</span>
+                  <span class="badge-tag">Human-Computer Interaction</span>
+                  <span class="badge-tag">Information Security</span>
+                  <span class="badge-tag">Software Engineering</span>
+                  <span class="badge-tag">Networking & Communications</span>
+                </div>
+
+                <div class="p-3 bg-light rounded-3 small text-secondary">
+                  <i class="bi bi-star-fill text-warning me-1"></i>
+                  <strong>Academic Honors:</strong> Dean's Lister, Active Officer in the University Computer Science Society, Capstone Lead Developer.
+                </div>
+              </div>
+            </div>
+
+            <!-- Secondary Education Card -->
+            <div class="col-lg-6">
+              <div class="card-custom h-100 p-4">
+                <div class="d-flex justify-content-between align-items-start mb-3">
+                  <div>
+                    <span class="badge-soft mb-2">Secondary Education</span>
+                    <h4 class="fw-bold text-dark mb-1">Senior High School – STEM Strand</h4>
+                    <div class="text-primary fw-semibold small">Science, Technology, Engineering & Mathematics</div>
+                  </div>
+                  <span class="badge-tag">2019 – 2021</span>
+                </div>
+
+                <p class="text-secondary small mb-3">
+                  Graduated with Academic Honors. Developed foundational competencies in advanced mathematics, physics, logic formulation, and introductory computer programming.
+                </p>
+
+                <h6 class="fw-bold small text-dark mb-2">Key Highlights & Involvements:</h6>
+                <ul class="list-unstyled small text-secondary mb-3">
+                  <li class="mb-1"><i class="bi bi-check-circle-fill text-success me-2"></i>Graduated With Honors distinction</li>
+                  <li class="mb-1"><i class="bi bi-check-circle-fill text-success me-2"></i>Leader of the High School Robotics & Science Club</li>
+                  <li class="mb-1"><i class="bi bi-check-circle-fill text-success me-2"></i>Participant in Regional Inter-School Science Fair</li>
+                </ul>
+
+                <div class="p-3 bg-light rounded-3 small text-secondary">
+                  <i class="bi bi-lightbulb text-primary me-1"></i>
+                  <strong>Foundational Takeaway:</strong> Fostered an analytical mindset, mathematical rigor, and passion for scientific inquiry.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Technical Skills Matrix -->
+      <section class="py-5" aria-label="Technical Skills Matrix">
+        <div class="container py-3">
+          <div class="section-title-wrap text-center">
+            <div class="section-pretitle">Competencies & Tools</div>
+            <h2 class="section-title">Technical Skills Matrix</h2>
+            <p class="section-subtitle mx-auto">
+              A breakdown of languages, frameworks, developer utilities, and professional competencies I actively practice.
+            </p>
+          </div>
+
+          <div class="row g-4">
+            <!-- Category 1: Languages -->
+            <div class="col-md-6 col-lg-3">
+              <div class="skill-category-card">
+                <div class="d-flex align-items-center gap-2 mb-3">
+                  <div class="contact-icon-bubble" style="width: 38px; height: 38px; min-width: 38px; font-size: 1rem;">
+                    <i class="bi bi-code"></i>
+                  </div>
+                  <h5 class="fw-bold text-dark mb-0">Languages</h5>
+                </div>
+                <div class="d-flex flex-wrap gap-2">
+                  <span class="skill-pill"><i class="bi bi-filetype-html text-danger"></i> HTML5</span>
+                  <span class="skill-pill"><i class="bi bi-filetype-css text-primary"></i> CSS3</span>
+                  <span class="skill-pill"><i class="bi bi-filetype-js text-warning"></i> JavaScript (ES6+)</span>
+                  <span class="skill-pill"><i class="bi bi-filetype-py text-info"></i> Python</span>
+                  <span class="skill-pill"><i class="bi bi-filetype-java text-danger"></i> Java</span>
+                  <span class="skill-pill"><i class="bi bi-database text-secondary"></i> SQL</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Category 2: Frameworks & Web Tech -->
+            <div class="col-md-6 col-lg-3">
+              <div class="skill-category-card">
+                <div class="d-flex align-items-center gap-2 mb-3">
+                  <div class="contact-icon-bubble" style="width: 38px; height: 38px; min-width: 38px; font-size: 1rem;">
+                    <i class="bi bi-layers"></i>
+                  </div>
+                  <h5 class="fw-bold text-dark mb-0">Frameworks</h5>
+                </div>
+                <div class="d-flex flex-wrap gap-2">
+                  <span class="skill-pill"><i class="bi bi-bootstrap-fill text-purple"></i> Bootstrap 5</span>
+                  <span class="skill-pill"><i class="bi bi-palette text-cyan"></i> Tailwind CSS</span>
+                  <span class="skill-pill"><i class="bi bi-filetype-jsx text-info"></i> React</span>
+                  <span class="skill-pill"><i class="bi bi-node-plus text-success"></i> Node.js</span>
+                  <span class="skill-pill"><i class="bi bi-server text-secondary"></i> Express.js</span>
+                  <span class="skill-pill"><i class="bi bi-arrow-repeat text-primary"></i> RESTful APIs</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Category 3: Developer Tools -->
+            <div class="col-md-6 col-lg-3">
+              <div class="skill-category-card">
+                <div class="d-flex align-items-center gap-2 mb-3">
+                  <div class="contact-icon-bubble" style="width: 38px; height: 38px; min-width: 38px; font-size: 1rem;">
+                    <i class="bi bi-tools"></i>
+                  </div>
+                  <h5 class="fw-bold text-dark mb-0">Dev Tools</h5>
+                </div>
+                <div class="d-flex flex-wrap gap-2">
+                  <span class="skill-pill"><i class="bi bi-git text-danger"></i> Git</span>
+                  <span class="skill-pill"><i class="bi bi-github text-dark"></i> GitHub</span>
+                  <span class="skill-pill"><i class="bi bi-code-square text-primary"></i> VS Code</span>
+                  <span class="skill-pill"><i class="bi bi-send text-warning"></i> Postman</span>
+                  <span class="skill-pill"><i class="bi bi-figma text-danger"></i> Figma</span>
+                  <span class="skill-pill"><i class="bi bi-database-check text-info"></i> MySQL</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Category 4: Professional & Soft Skills -->
+            <div class="col-md-6 col-lg-3">
+              <div class="skill-category-card">
+                <div class="d-flex align-items-center gap-2 mb-3">
+                  <div class="contact-icon-bubble" style="width: 38px; height: 38px; min-width: 38px; font-size: 1rem;">
+                    <i class="bi bi-people"></i>
+                  </div>
+                  <h5 class="fw-bold text-dark mb-0">Soft Skills</h5>
+                </div>
+                <div class="d-flex flex-wrap gap-2">
+                  <span class="skill-pill"><i class="bi bi-check2 text-success"></i> Problem Solving</span>
+                  <span class="skill-pill"><i class="bi bi-check2 text-success"></i> Team Collaboration</span>
+                  <span class="skill-pill"><i class="bi bi-check2 text-success"></i> Technical Writing</span>
+                  <span class="skill-pill"><i class="bi bi-check2 text-success"></i> Time Management</span>
+                  <span class="skill-pill"><i class="bi bi-check2 text-success"></i> Fast Learner</span>
+                  <span class="skill-pill"><i class="bi bi-check2 text-success"></i> Adaptability</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Interests & Hobbies Section -->
+      <section class="py-5 bg-white border-top border-bottom" aria-label="Interests & Personal Growth">
+        <div class="container py-3">
+          <div class="section-title-wrap text-center">
+            <div class="section-pretitle">Personal Interests</div>
+            <h2 class="section-title">Beyond the Classroom</h2>
+            <p class="section-subtitle mx-auto">
+              Activities and pursuits that shape my mindset, fuel my creativity, and keep me inspired.
+            </p>
+          </div>
+
+          <div class="row g-4">
+            <div class="col-md-6 col-lg-3">
+              <div class="p-4 rounded-3 border bg-light h-100">
+                <div class="fs-2 text-primary mb-2"><i class="bi bi-git"></i></div>
+                <h5 class="fw-bold mb-2">Open Source Exploration</h5>
+                <p class="small text-secondary mb-0">
+                  Studying open-source repositories to understand how veteran engineers write idiomatic code, maintain architecture, and document components.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3">
+              <div class="p-4 rounded-3 border bg-light h-100">
+                <div class="fs-2 text-primary mb-2"><i class="bi bi-brush"></i></div>
+                <h5 class="fw-bold mb-2">UI/UX Prototyping</h5>
+                <p class="small text-secondary mb-0">
+                  Experimenting in Figma with typography, color theory, and micro-interactions before translating wireframes into semantic HTML and CSS.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3">
+              <div class="p-4 rounded-3 border bg-light h-100">
+                <div class="fs-2 text-primary mb-2"><i class="bi bi-camera"></i></div>
+                <h5 class="fw-bold mb-2">Campus Event Photography</h5>
+                <p class="small text-secondary mb-0">
+                  Documenting departmental seminars, tech exhibits, and student organization highlights with a focus on visual storytelling.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3">
+              <div class="p-4 rounded-3 border bg-light h-100">
+                <div class="fs-2 text-primary mb-2"><i class="bi bi-heart-pulse"></i></div>
+                <h5 class="fw-bold mb-2">Community Volunteering</h5>
+                <p class="small text-secondary mb-0">
+                  Participating in educational extension initiatives that teach basic computer literacy to underprivileged public school students.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Values & Engineering Philosophy -->
+      <section class="py-5" aria-label="Core Values">
+        <div class="container py-3">
+          <div class="section-title-wrap text-center">
+            <div class="section-pretitle">Guiding Principles</div>
+            <h2 class="section-title">My Working Philosophy</h2>
+            <p class="section-subtitle mx-auto">
+              The core principles that guide how I approach every code commit, design decision, and team interaction.
+            </p>
+          </div>
+
+          <div class="row g-4">
+            <div class="col-md-4">
+              <div class="card-custom h-100 p-4">
+                <div class="contact-icon-bubble mb-3">
+                  <i class="bi bi-arrow-repeat"></i>
+                </div>
+                <h5 class="fw-bold mb-2">Continuous Improvement</h5>
+                <p class="text-secondary small mb-0">
+                  Technology evolves rapidly. I approach every challenge with intellectual humility and treat every bug or review feedback as an opportunity to sharpen my craft.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card-custom h-100 p-4">
+                <div class="contact-icon-bubble mb-3">
+                  <i class="bi bi-shield-check"></i>
+                </div>
+                <h5 class="fw-bold mb-2">Integrity & Reliability</h5>
+                <p class="text-secondary small mb-0">
+                  Delivering clean, honest work on schedule. Whether working independently on assignments or leading a capstone squad, I prioritize clear communication and accountability.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card-custom h-100 p-4">
+                <div class="contact-icon-bubble mb-3">
+                  <i class="bi bi-person-hearts"></i>
+                </div>
+                <h5 class="fw-bold mb-2">User-Centric Empathy</h5>
+                <p class="text-secondary small mb-0">
+                  Great software begins with the user. I strive to design accessible, frictionless experiences that make digital tools empowering rather than overwhelming.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-custom">
+      <div class="container">
+        <div class="row g-4 mb-4">
+          <div class="col-lg-4">
+            <div class="d-flex align-items-center gap-2 mb-3">
+              <div class="navbar-brand-badge" style="width: 32px; height: 32px; font-size: 0.9rem;">CA</div>
+              <span class="brand-text-name">Cedemarl Abelarde</span>
+            </div>
+            <p class="small text-muted mb-3" style="max-width: 320px;">
+              Graduating student passionate about modern software development, responsive web design, and continuous technical growth.
+            </p>
+            <div class="d-flex gap-2">
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="footer-social-link" title="GitHub">
+                <i class="bi bi-github"></i>
+              </a>
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="footer-social-link" title="LinkedIn">
+                <i class="bi bi-linkedin"></i>
+              </a>
+              <a href="mailto:abelardeocedemarl07@gmail.com" class="footer-social-link" title="Email">
+                <i class="bi bi-envelope-fill"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-6 col-lg-2">
+            <h6 class="fw-bold text-dark mb-3">Navigation</h6>
+            <ul class="list-unstyled small mb-0">
+              <li class="mb-2"><a href="index.html" class="text-secondary text-decoration-none">Home</a></li>
+              <li class="mb-2"><a href="about.html" class="text-secondary text-decoration-none">About Me</a></li>
+              <li class="mb-2"><a href="projects.html" class="text-secondary text-decoration-none">Projects & Works</a></li>
+              <li class="mb-2"><a href="tour.html" class="text-secondary text-decoration-none">Academic Tours</a></li>
+              <li class="mb-2"><a href="contact.html" class="text-secondary text-decoration-none">Contact Me</a></li>
+            </ul>
+          </div>
+
+          <div class="col-6 col-lg-3">
+            <h6 class="fw-bold text-dark mb-3">Academic Info</h6>
+            <ul class="list-unstyled small text-muted mb-0">
+              <li class="mb-1"><i class="bi bi-mortarboard me-2 text-primary"></i>BS in Information Technology</li>
+              <li class="mb-1"><i class="bi bi-calendar3 me-2 text-primary"></i>Class of 2025 / 2026</li>
+              <li class="mb-1"><i class="bi bi-geo-alt me-2 text-primary"></i>Metro Manila, Philippines</li>
+              <li class="mb-1"><i class="bi bi-check-circle me-2 text-success"></i>Available for Internship</li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3">
+            <h6 class="fw-bold text-dark mb-3">Direct Contact</h6>
+            <p class="small text-muted mb-2">Feel free to reach out directly via email:</p>
+            <div class="d-flex align-items-center gap-2">
+              <span class="small fw-semibold text-dark text-break">abelardeocedemarl07@gmail.com</span>
+              <button class="btn btn-sm btn-outline-secondary btn-copy-email p-1 px-2" data-email="abelardeocedemarl07@gmail.com" title="Copy Email">
+                <i class="bi bi-clipboard"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="pt-3 border-top d-flex flex-column flex-md-row justify-content-between align-items-center text-muted small">
+          <p class="mb-2 mb-md-0">&copy; 2026 Cedemarl Abelarde. Built with HTML5, CSS3 & Bootstrap 5.</p>
+          <p class="mb-0">Designed for professional internship & career presentations.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Resume Modal -->
+    <div class="modal fade" id="resumeModal" tabindex="-1" aria-labelledby="resumeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content border-0 shadow-lg" style="border-radius: var(--radius-lg);">
+          <div class="modal-header border-bottom px-4 pt-4">
+            <div>
+              <span class="badge-soft mb-1 d-inline-block">Curriculum Vitae</span>
+              <h5 class="modal-title fw-bold text-dark" id="resumeModalLabel">Cedemarl Abelarde – Professional Resume</h5>
+            </div>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body px-4 py-3">
+            <div class="p-4 border rounded-3 bg-white">
+              <div class="text-center pb-3 border-bottom mb-3">
+                <h4 class="fw-bold text-dark mb-1">CEDEMARL ABELARDE</h4>
+                <p class="small text-muted mb-2">Bachelor of Science in Information Technology • Graduating Senior</p>
+                <div class="small text-secondary d-flex flex-wrap justify-content-center gap-3">
+                  <span><i class="bi bi-envelope me-1"></i> abelardeocedemarl07@gmail.com</span>
+                  <span><i class="bi bi-geo-alt me-1"></i> Metro Manila, Philippines</span>
+                  <span><i class="bi bi-globe me-1"></i> Portfolio Website</span>
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <h6 class="fw-bold text-primary text-uppercase small border-bottom pb-1">Academic Background</h6>
+                <div class="d-flex justify-content-between mb-1">
+                  <span class="fw-semibold small">Bachelor of Science in Information Technology</span>
+                  <span class="small text-muted">2021 – Present</span>
+                </div>
+                <div class="small text-secondary">College of Computer Studies • Dean's Honors List Candidate</div>
+                <p class="small text-muted mb-0">Relevant Coursework: Web Development, Database Management, Algorithms & Data Structures, Software Engineering, Mobile Computing.</p>
+              </div>
+
+              <div class="mb-3">
+                <h6 class="fw-bold text-primary text-uppercase small border-bottom pb-1">Core Technical Competencies</h6>
+                <p class="small text-secondary mb-1"><strong>Languages:</strong> JavaScript (ES6+), HTML5, CSS3, Python, Java, SQL</p>
+                <p class="small text-secondary mb-1"><strong>Frameworks & Libraries:</strong> Bootstrap 5, Express.js, React, Node.js</p>
+                <p class="small text-secondary mb-0"><strong>Developer Tools:</strong> Git, GitHub, VS Code, Postman, MySQL Workbench, Figma</p>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer border-top px-4 pb-4 d-flex justify-content-between">
+            <span class="small text-muted"><i class="bi bi-shield-check text-success me-1"></i> Verified Academic Record</span>
+            <div class="d-flex gap-2">
+              <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary-navy btn-sm" onclick="window.print()">
+                <i class="bi bi-printer me-1"></i> Print / Save as PDF
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap 5 Bundle JS via CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <!-- Custom Script -->
+    <script src="script.js"></script>
+  </body>
+</html>

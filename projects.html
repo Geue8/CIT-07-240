@@ -1,0 +1,564 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects & Works | Cedemarl Abelarde</title>
+    <meta name="description" content="Explore academic capstone systems, class assignments, and personal coding projects created by Cedemarl Abelarde using HTML5, Bootstrap 5, JavaScript, and MySQL." />
+    <meta property="og:title" content="Projects & Works | Cedemarl Abelarde" />
+    <meta property="og:description" content="Explore academic capstone systems, class assignments, and personal coding projects created by Cedemarl Abelarde." />
+    <meta property="og:type" content="website" />
+
+    <!-- Google Fonts: Poppins & Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+    <!-- Bootstrap 5 CSS via CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    
+    <!-- Bootstrap Icons via CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Top Navigation Bar -->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-custom sticky-top" aria-label="Main Navigation">
+        <div class="container">
+          <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+            <div class="navbar-brand-badge">CA</div>
+            <div>
+              <div class="brand-text-name">Cedemarl Abelarde</div>
+              <div class="brand-text-sub">Student Portfolio</div>
+            </div>
+          </a>
+
+          <!-- Mobile Toggle Button -->
+          <button class="navbar-toggler border-0 shadow-none p-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-list fs-2 text-primary"></i>
+          </button>
+
+          <!-- Navigation Links -->
+          <div class="collapse navbar-collapse" id="navbarContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+              <li class="nav-item">
+                <a class="nav-link nav-link-custom" href="index.html">
+                  <i class="bi bi-house-door me-1"></i> Home
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-link-custom" href="about.html">
+                  <i class="bi bi-person me-1"></i> About Me
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-link-custom active" aria-current="page" href="projects.html">
+                  <i class="bi bi-kanban me-1"></i> Projects
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-link-custom" href="tour.html">
+                  <i class="bi bi-compass me-1"></i> Academic Tours
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-link-custom" href="contact.html">
+                  <i class="bi bi-envelope me-1"></i> Contact
+                </a>
+              </li>
+              <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+                <button type="button" class="btn btn-outline-navy btn-sm d-flex align-items-center gap-2" data-bs-toggle="modal" data-bs-target="#resumeModal">
+                  <i class="bi bi-file-earmark-person"></i>
+                  <span>Resume</span>
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Page Header Banner -->
+      <section class="py-5 bg-white border-bottom">
+        <div class="container py-2">
+          <div class="row align-items-center">
+            <div class="col-lg-8">
+              <span class="badge-soft mb-2">
+                <i class="bi bi-code-square"></i> Portfolio Showcase
+              </span>
+              <h1 class="display-5 fw-bold mb-2">Projects & Works</h1>
+              <p class="lead text-secondary mb-0">
+                A curated selection of academic coursework, university capstone software, and personal development projects.
+              </p>
+            </div>
+            <div class="col-lg-4 text-lg-end mt-3 mt-lg-0">
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-outline-navy">
+                <i class="bi bi-github me-2"></i> Visit GitHub Profile
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section class="py-5">
+        <div class="container py-3">
+          <!-- Filter Controls -->
+          <div class="filter-btn-group">
+            <button class="btn btn-filter project-filter-btn active" data-filter="all">
+              <i class="bi bi-grid-fill me-1"></i> All Projects (6)
+            </button>
+            <button class="btn btn-filter project-filter-btn" data-filter="academic">
+              <i class="bi bi-mortarboard me-1"></i> Academic / Capstone
+            </button>
+            <button class="btn btn-filter project-filter-btn" data-filter="web">
+              <i class="bi bi-globe me-1"></i> Web Development
+            </button>
+            <button class="btn btn-filter project-filter-btn" data-filter="uiux">
+              <i class="bi bi-palette me-1"></i> UI/UX Design
+            </button>
+            <button class="btn btn-filter project-filter-btn" data-filter="tools">
+              <i class="bi bi-terminal me-1"></i> Tools & Utilities
+            </button>
+          </div>
+
+          <!-- Projects Grid -->
+          <div class="row g-4" id="projectsContainer">
+            <!-- Project 1: CampusPulse -->
+            <div class="col-md-6 col-lg-4 project-card-item" data-category="academic web">
+              <div class="card-custom h-100 d-flex flex-column">
+                <div class="project-thumb-container" style="background: linear-gradient(135deg, #0f2b48 0%, #1e3a8a 100%);">
+                  <div class="text-center text-white p-3">
+                    <i class="bi bi-people-fill display-5 mb-2 text-info opacity-75"></i>
+                    <div class="fw-bold fs-6">CampusPulse Portal</div>
+                    <span class="small opacity-75">Student Org Management</span>
+                  </div>
+                  <span class="project-category-badge">Academic Capstone</span>
+                </div>
+                <div class="p-4 d-flex flex-column flex-grow-1">
+                  <div class="d-flex justify-content-between align-items-center mb-2">
+                    <h5 class="fw-bold mb-0">CampusPulse</h5>
+                    <span class="badge-soft text-primary">Team Lead</span>
+                  </div>
+                  <p class="text-secondary small flex-grow-1 mb-3">
+                    A comprehensive university portal featuring QR-based event attendance, student council elections, and organization budget liquidation reporting.
+                  </p>
+                  <div class="d-flex flex-wrap gap-1 mb-3">
+                    <span class="badge-tag">HTML5</span>
+                    <span class="badge-tag">Bootstrap 5</span>
+                    <span class="badge-tag">Node.js</span>
+                    <span class="badge-tag">MySQL</span>
+                    <span class="badge-tag">QR Engine</span>
+                  </div>
+                  <div class="d-flex gap-2 pt-2 border-top mt-auto">
+                    <button type="button" class="btn btn-primary-navy btn-sm w-100 btn-view-project" data-project-id="campuspulse">
+                      <i class="bi bi-info-circle me-1"></i> View Case Study
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 2: EduTracker -->
+            <div class="col-md-6 col-lg-4 project-card-item" data-category="tools web">
+              <div class="card-custom h-100 d-flex flex-column">
+                <div class="project-thumb-container" style="background: linear-gradient(135deg, #065f46 0%, #047857 100%);">
+                  <div class="text-center text-white p-3">
+                    <i class="bi bi-journal-check display-5 mb-2 text-warning opacity-75"></i>
+                    <div class="fw-bold fs-6">EduTracker Dashboard</div>
+                    <span class="small opacity-75">Academic Planner & Simulator</span>
+                  </div>
+                  <span class="project-category-badge">Productivity Tool</span>
+                </div>
+                <div class="p-4 d-flex flex-column flex-grow-1">
+                  <div class="d-flex justify-content-between align-items-center mb-2">
+                    <h5 class="fw-bold mb-0">EduTracker</h5>
+                    <span class="badge-soft text-success">Personal Work</span>
+                  </div>
+                  <p class="text-secondary small flex-grow-1 mb-3">
+                    An interactive study planner and weighted GPA forecasting tool equipped with deadline countdowns, credit trackers, and study analytics.
+                  </p>
+                  <div class="d-flex flex-wrap gap-1 mb-3">
+                    <span class="badge-tag">HTML5</span>
+                    <span class="badge-tag">Bootstrap 5</span>
+                    <span class="badge-tag">JavaScript ES6</span>
+                    <span class="badge-tag">Chart.js</span>
+                    <span class="badge-tag">Local Storage</span>
+                  </div>
+                  <div class="d-flex gap-2 pt-2 border-top mt-auto">
+                    <button type="button" class="btn btn-primary-navy btn-sm w-100 btn-view-project" data-project-id="edutracker">
+                      <i class="bi bi-info-circle me-1"></i> View Case Study
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 3: MediQueue -->
+            <div class="col-md-6 col-lg-4 project-card-item" data-category="academic web">
+              <div class="card-custom h-100 d-flex flex-column">
+                <div class="project-thumb-container" style="background: linear-gradient(135deg, #1e1b4b 0%, #312e81 100%);">
+                  <div class="text-center text-white p-3">
+                    <i class="bi bi-hospital display-5 mb-2 text-info opacity-75"></i>
+                    <div class="fw-bold fs-6">MediQueue Portal</div>
+                    <span class="small opacity-75">Community Clinic Triage</span>
+                  </div>
+                  <span class="project-category-badge">Academic Coursework</span>
+                </div>
+                <div class="p-4 d-flex flex-column flex-grow-1">
+                  <div class="d-flex justify-content-between align-items-center mb-2">
+                    <h5 class="fw-bold mb-0">MediQueue</h5>
+                    <span class="badge-soft text-purple">Best Architecture</span>
+                  </div>
+                  <p class="text-secondary small flex-grow-1 mb-3">
+                    An accessible healthcare scheduling portal engineered for community clinics to streamline patient queues, triage priorities, and SMS alerts.
+                  </p>
+                  <div class="d-flex flex-wrap gap-1 mb-3">
+                    <span class="badge-tag">HTML5</span>
+                    <span class="badge-tag">Bootstrap 5</span>
+                    <span class="badge-tag">REST API</span>
+                    <span class="badge-tag">PostgreSQL</span>
+                    <span class="badge-tag">Accessibility</span>
+                  </div>
+                  <div class="d-flex gap-2 pt-2 border-top mt-auto">
+                    <button type="button" class="btn btn-primary-navy btn-sm w-100 btn-view-project" data-project-id="mediqueue">
+                      <i class="bi bi-info-circle me-1"></i> View Case Study
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 4: EcoBytes -->
+            <div class="col-md-6 col-lg-4 project-card-item" data-category="web uiux">
+              <div class="card-custom h-100 d-flex flex-column">
+                <div class="project-thumb-container" style="background: linear-gradient(135deg, #14532d 0%, #166534 100%);">
+                  <div class="text-center text-white p-3">
+                    <i class="bi bi-recycle display-5 mb-2 text-success opacity-75"></i>
+                    <div class="fw-bold fs-6">EcoBytes Recycling</div>
+                    <span class="small opacity-75">E-Waste Awareness Hub</span>
+                  </div>
+                  <span class="project-category-badge">Green Tech</span>
+                </div>
+                <div class="p-4 d-flex flex-column flex-grow-1">
+                  <div class="d-flex justify-content-between align-items-center mb-2">
+                    <h5 class="fw-bold mb-0">EcoBytes</h5>
+                    <span class="badge-soft text-success">Hackathon Project</span>
+                  </div>
+                  <p class="text-secondary small flex-grow-1 mb-3">
+                    An environmental education platform with interactive e-waste collection bin locators, hardware refurbishing guides, and landfill diversion counters.
+                  </p>
+                  <div class="d-flex flex-wrap gap-1 mb-3">
+                    <span class="badge-tag">Bootstrap 5</span>
+                    <span class="badge-tag">Leaflet Maps</span>
+                    <span class="badge-tag">JavaScript</span>
+                    <span class="badge-tag">Responsive UI</span>
+                  </div>
+                  <div class="d-flex gap-2 pt-2 border-top mt-auto">
+                    <button type="button" class="btn btn-primary-navy btn-sm w-100 btn-view-project" data-project-id="ecobytes">
+                      <i class="bi bi-info-circle me-1"></i> View Case Study
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 5: ShopSmart -->
+            <div class="col-md-6 col-lg-4 project-card-item" data-category="web uiux">
+              <div class="card-custom h-100 d-flex flex-column">
+                <div class="project-thumb-container" style="background: linear-gradient(135deg, #831843 0%, #9d174d 100%);">
+                  <div class="text-center text-white p-3">
+                    <i class="bi bi-bag-check display-5 mb-2 text-pink opacity-75"></i>
+                    <div class="fw-bold fs-6">ShopSmart Storefront</div>
+                    <span class="small opacity-75">Campus Artisan Market</span>
+                  </div>
+                  <span class="project-category-badge">E-Commerce</span>
+                </div>
+                <div class="p-4 d-flex flex-column flex-grow-1">
+                  <div class="d-flex justify-content-between align-items-center mb-2">
+                    <h5 class="fw-bold mb-0">ShopSmart</h5>
+                    <span class="badge-soft text-danger">Grade 98/100</span>
+                  </div>
+                  <p class="text-secondary small flex-grow-1 mb-3">
+                    A responsive digital storefront prototype supporting student entrepreneurs during university artisan fairs with interactive carts and checkout flows.
+                  </p>
+                  <div class="d-flex flex-wrap gap-1 mb-3">
+                    <span class="badge-tag">HTML5</span>
+                    <span class="badge-tag">Bootstrap 5</span>
+                    <span class="badge-tag">Vanilla JS</span>
+                    <span class="badge-tag">Cart Logic</span>
+                  </div>
+                  <div class="d-flex gap-2 pt-2 border-top mt-auto">
+                    <button type="button" class="btn btn-primary-navy btn-sm w-100 btn-view-project" data-project-id="shopsmart">
+                      <i class="bi bi-info-circle me-1"></i> View Case Study
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 6: DevDocu -->
+            <div class="col-md-6 col-lg-4 project-card-item" data-category="tools">
+              <div class="card-custom h-100 d-flex flex-column">
+                <div class="project-thumb-container" style="background: linear-gradient(135deg, #111827 0%, #1f2937 100%);">
+                  <div class="text-center text-white p-3">
+                    <i class="bi bi-terminal-fill display-5 mb-2 text-primary opacity-75"></i>
+                    <div class="fw-bold fs-6">DevDocu Vault</div>
+                    <span class="small opacity-75">Code Snippets & Cheatsheets</span>
+                  </div>
+                  <span class="project-category-badge">Developer Tool</span>
+                </div>
+                <div class="p-4 d-flex flex-column flex-grow-1">
+                  <div class="d-flex justify-content-between align-items-center mb-2">
+                    <h5 class="fw-bold mb-0">DevDocu</h5>
+                    <span class="badge-soft text-dark">Open Source</span>
+                  </div>
+                  <p class="text-secondary small flex-grow-1 mb-3">
+                    A lightweight reference hub for Git commands, SQL queries, and layout snippets with instant fuzzy search and one-click snippet copying.
+                  </p>
+                  <div class="d-flex flex-wrap gap-1 mb-3">
+                    <span class="badge-tag">Bootstrap 5</span>
+                    <span class="badge-tag">Prism.js</span>
+                    <span class="badge-tag">Fuzzy Search</span>
+                    <span class="badge-tag">Keyboard Nav</span>
+                  </div>
+                  <div class="d-flex gap-2 pt-2 border-top mt-auto">
+                    <button type="button" class="btn btn-primary-navy btn-sm w-100 btn-view-project" data-project-id="devdocu">
+                      <i class="bi bi-info-circle me-1"></i> View Case Study
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Technical Approach & Project Standards Banner -->
+      <section class="py-5 bg-white border-top border-bottom" aria-label="Development Standards">
+        <div class="container py-3">
+          <div class="section-title-wrap text-center">
+            <div class="section-pretitle">Engineering Quality</div>
+            <h2 class="section-title">My Project Development Standards</h2>
+            <p class="section-subtitle mx-auto">
+              How I approach academic assignments, capstone systems, and team codebases from inception to release.
+            </p>
+          </div>
+
+          <div class="row g-4 text-center">
+            <div class="col-md-3">
+              <div class="p-3">
+                <div class="fs-1 text-primary mb-2"><i class="bi bi-diagram-3"></i></div>
+                <h6 class="fw-bold mb-1">Architecture First</h6>
+                <p class="small text-muted mb-0">Planning database entity relationships, state lifecycles, and component hierarchies before writing code.</p>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="p-3">
+                <div class="fs-1 text-primary mb-2"><i class="bi bi-file-code"></i></div>
+                <h6 class="fw-bold mb-1">Clean & Semantic Code</h6>
+                <p class="small text-muted mb-0">Writing self-documenting code, descriptive variable names, and semantic HTML structure for accessibility.</p>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="p-3">
+                <div class="fs-1 text-primary mb-2"><i class="bi bi-phone"></i></div>
+                <h6 class="fw-bold mb-1">Responsive Design</h6>
+                <p class="small text-muted mb-0">Mobile-first layouts ensuring flawless user experiences across phones, tablets, and desktop displays.</p>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="p-3">
+                <div class="fs-1 text-primary mb-2"><i class="bi bi-git"></i></div>
+                <h6 class="fw-bold mb-1">Version Control Hygiene</h6>
+                <p class="small text-muted mb-0">Atomic git commits, descriptive commit messages, and collaborative branch workflows with peer reviews.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-custom">
+      <div class="container">
+        <div class="row g-4 mb-4">
+          <div class="col-lg-4">
+            <div class="d-flex align-items-center gap-2 mb-3">
+              <div class="navbar-brand-badge" style="width: 32px; height: 32px; font-size: 0.9rem;">CA</div>
+              <span class="brand-text-name">Cedemarl Abelarde</span>
+            </div>
+            <p class="small text-muted mb-3" style="max-width: 320px;">
+              Graduating student passionate about modern software development, responsive web design, and continuous technical growth.
+            </p>
+            <div class="d-flex gap-2">
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="footer-social-link" title="GitHub">
+                <i class="bi bi-github"></i>
+              </a>
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="footer-social-link" title="LinkedIn">
+                <i class="bi bi-linkedin"></i>
+              </a>
+              <a href="mailto:abelardeocedemarl07@gmail.com" class="footer-social-link" title="Email">
+                <i class="bi bi-envelope-fill"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-6 col-lg-2">
+            <h6 class="fw-bold text-dark mb-3">Navigation</h6>
+            <ul class="list-unstyled small mb-0">
+              <li class="mb-2"><a href="index.html" class="text-secondary text-decoration-none">Home</a></li>
+              <li class="mb-2"><a href="about.html" class="text-secondary text-decoration-none">About Me</a></li>
+              <li class="mb-2"><a href="projects.html" class="text-secondary text-decoration-none">Projects & Works</a></li>
+              <li class="mb-2"><a href="tour.html" class="text-secondary text-decoration-none">Academic Tours</a></li>
+              <li class="mb-2"><a href="contact.html" class="text-secondary text-decoration-none">Contact Me</a></li>
+            </ul>
+          </div>
+
+          <div class="col-6 col-lg-3">
+            <h6 class="fw-bold text-dark mb-3">Academic Info</h6>
+            <ul class="list-unstyled small text-muted mb-0">
+              <li class="mb-1"><i class="bi bi-mortarboard me-2 text-primary"></i>BS in Information Technology</li>
+              <li class="mb-1"><i class="bi bi-calendar3 me-2 text-primary"></i>Class of 2025 / 2026</li>
+              <li class="mb-1"><i class="bi bi-geo-alt me-2 text-primary"></i>Metro Manila, Philippines</li>
+              <li class="mb-1"><i class="bi bi-check-circle me-2 text-success"></i>Available for Internship</li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3">
+            <h6 class="fw-bold text-dark mb-3">Direct Contact</h6>
+            <p class="small text-muted mb-2">Feel free to reach out directly via email:</p>
+            <div class="d-flex align-items-center gap-2">
+              <span class="small fw-semibold text-dark text-break">abelardeocedemarl07@gmail.com</span>
+              <button class="btn btn-sm btn-outline-secondary btn-copy-email p-1 px-2" data-email="abelardeocedemarl07@gmail.com" title="Copy Email">
+                <i class="bi bi-clipboard"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="pt-3 border-top d-flex flex-column flex-md-row justify-content-between align-items-center text-muted small">
+          <p class="mb-2 mb-md-0">&copy; 2026 Cedemarl Abelarde. Built with HTML5, CSS3 & Bootstrap 5.</p>
+          <p class="mb-0">Designed for professional internship & career presentations.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Project Detail Modal -->
+    <div class="modal fade" id="projectDetailModal" tabindex="-1" aria-labelledby="modalProjectTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content border-0 shadow-lg" style="border-radius: var(--radius-lg);">
+          <div class="modal-header border-bottom px-4 pt-4">
+            <div>
+              <span id="modalProjectType" class="badge-soft mb-2 d-inline-block"></span>
+              <h4 class="modal-title fw-bold text-dark" id="modalProjectTitle"></h4>
+            </div>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body px-4 py-3">
+            <div class="row g-4">
+              <div class="col-12">
+                <h6 class="fw-bold text-primary mb-2"><i class="bi bi-card-text me-2"></i>Project Overview</h6>
+                <p id="modalProjectOverview" class="text-secondary small"></p>
+              </div>
+              <div class="col-md-6">
+                <h6 class="fw-bold text-primary mb-2"><i class="bi bi-check-circle me-2"></i>Key Features & Deliverables</h6>
+                <ul id="modalProjectFeatures" class="list-unstyled small mb-0"></ul>
+              </div>
+              <div class="col-md-6">
+                <div class="p-3 bg-light rounded-3 mb-3">
+                  <div class="small fw-bold text-dark mb-1">Role:</div>
+                  <div id="modalProjectRole" class="small text-secondary mb-2"></div>
+                  <div class="small fw-bold text-dark mb-1">Timeline:</div>
+                  <div id="modalProjectTimeline" class="small text-secondary"></div>
+                </div>
+                <h6 class="fw-bold text-primary mb-2"><i class="bi bi-cpu me-2"></i>Technologies Used</h6>
+                <div id="modalProjectTech" class="d-flex flex-wrap gap-1"></div>
+              </div>
+              <div class="col-12 border-top pt-3">
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <h6 class="fw-bold text-dark small mb-1"><i class="bi bi-lightning-charge text-warning me-1"></i>Engineering Challenge:</h6>
+                    <p id="modalProjectChallenges" class="small text-secondary mb-0"></p>
+                  </div>
+                  <div class="col-md-6">
+                    <h6 class="fw-bold text-dark small mb-1"><i class="bi bi-trophy text-success me-1"></i>Impact & Results:</h6>
+                    <p id="modalProjectOutcomes" class="small text-secondary mb-0"></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer border-top px-4 pb-4">
+            <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Close</button>
+            <a href="contact.html" class="btn btn-primary-navy btn-sm">Inquire About This Project</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Resume Modal -->
+    <div class="modal fade" id="resumeModal" tabindex="-1" aria-labelledby="resumeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content border-0 shadow-lg" style="border-radius: var(--radius-lg);">
+          <div class="modal-header border-bottom px-4 pt-4">
+            <div>
+              <span class="badge-soft mb-1 d-inline-block">Curriculum Vitae</span>
+              <h5 class="modal-title fw-bold text-dark" id="resumeModalLabel">Cedemarl Abelarde – Professional Resume</h5>
+            </div>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body px-4 py-3">
+            <div class="p-4 border rounded-3 bg-white">
+              <div class="text-center pb-3 border-bottom mb-3">
+                <h4 class="fw-bold text-dark mb-1">CEDEMARL ABELARDE</h4>
+                <p class="small text-muted mb-2">Bachelor of Science in Information Technology • Graduating Senior</p>
+                <div class="small text-secondary d-flex flex-wrap justify-content-center gap-3">
+                  <span><i class="bi bi-envelope me-1"></i> abelardeocedemarl07@gmail.com</span>
+                  <span><i class="bi bi-geo-alt me-1"></i> Metro Manila, Philippines</span>
+                  <span><i class="bi bi-globe me-1"></i> Portfolio Website</span>
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <h6 class="fw-bold text-primary text-uppercase small border-bottom pb-1">Academic Background</h6>
+                <div class="d-flex justify-content-between mb-1">
+                  <span class="fw-semibold small">Bachelor of Science in Information Technology</span>
+                  <span class="small text-muted">2021 – Present</span>
+                </div>
+                <div class="small text-secondary">College of Computer Studies • Dean's Honors List Candidate</div>
+                <p class="small text-muted mb-0">Relevant Coursework: Web Development, Database Management, Algorithms & Data Structures, Software Engineering, Mobile Computing.</p>
+              </div>
+
+              <div class="mb-3">
+                <h6 class="fw-bold text-primary text-uppercase small border-bottom pb-1">Core Technical Competencies</h6>
+                <p class="small text-secondary mb-1"><strong>Languages:</strong> JavaScript (ES6+), HTML5, CSS3, Python, Java, SQL</p>
+                <p class="small text-secondary mb-1"><strong>Frameworks & Libraries:</strong> Bootstrap 5, Express.js, React, Node.js</p>
+                <p class="small text-secondary mb-0"><strong>Developer Tools:</strong> Git, GitHub, VS Code, Postman, MySQL Workbench, Figma</p>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer border-top px-4 pb-4 d-flex justify-content-between">
+            <span class="small text-muted"><i class="bi bi-shield-check text-success me-1"></i> Verified Academic Record</span>
+            <div class="d-flex gap-2">
+              <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary-navy btn-sm" onclick="window.print()">
+                <i class="bi bi-printer me-1"></i> Print / Save as PDF
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap 5 Bundle JS via CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <!-- Custom Script -->
+    <script src="script.js"></script>
+  </body>
+</html>
